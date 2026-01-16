@@ -4,26 +4,29 @@
 
 int main()
 {
-        char str[99];
-    int i,len=0;
+    char str[99];
+    int i, len = 0;
 
     printf("str girin ");
-    scanf("%s",str);
+    scanf("%s", str);
 
-    i=0;
+    i = 0;
 
-    while(str[i]!='\0'){
+    while (str[i] != '\0')
+    {
         len++;
         i++;
     }
 
-    int sum=0;
+    int sum = 0;
 
-    for(i=0;i<len;i++){
-        if(str[i+1]>str[i]){
+    for (i = 0; i < len; i++)
+    {
+        if (str[i + 1] > str[i])
+        {
             sum++;
         }
     }
 
-    printf("%d",sum);
+    printf("%d", sum);
 }
